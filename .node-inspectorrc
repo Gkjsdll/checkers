@@ -1,0 +1,4 @@
+{
+  "preload": false,
+  "hidden": ["client/", "node_modules/"]
+}

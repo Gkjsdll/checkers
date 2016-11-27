@@ -1,0 +1,22 @@
+{
+  "name": "checkers",
+  "description": "",
+  "main": "index.js",
+  "authors": [
+    "Zack Winchell <zackwinchell@gmail.com>"
+  ],
+  "license": "ISC",
+  "homepage": "https://github.com/Gkjsdll/checkers",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "react": "^15.4.1",
+    "redux": "https://cdnjs.cloudflare.com/ajax/libs/redux/3.6.0/redux.min.js",
+    "react-redux": "https://cdnjs.cloudflare.com/ajax/libs/react-redux/4.4.6/react-redux.min.js"
+  }
+}
