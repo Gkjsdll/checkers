@@ -37,13 +37,13 @@ class App extends React.Component {
 
 const GameBoard = (props) => (
   <div className="gameboard">
-    {_.flatten(props.gameState).map((square, index) => {
-      const row = Math.floor(index / 8);
-      const col = index % 8;
-      if ((row + col) % 2) {
-        return <div key={index} className="square black"></div>;
-      }
-      return <div key={index} className="square white"></div>;
+    {props.gameState.map((row, rowIndex) => {
+      return row.map((piece, colIndex) => {
+        if ((rowIndex + colIndex) % 2) {
+          return <div key={rowIndex * 8 + colIndex} className="square black"></div>;
+        }
+        return <div key={rowIndex * 8 + colIndex} className="square white"></div>;
+      })
     })}
   </div>
 );
