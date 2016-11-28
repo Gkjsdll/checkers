@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "compile": "babel index.js --out-file client/index.js",
-    "compile-watch": "babel index.js --watch --out-file client/index.js",
+    "compile-watch": "babel index.jsx --watch --out-file client/index.js",
     "inspect": "node-inspector & nodemon --debug server/app.js"
   },
   "repository": {
