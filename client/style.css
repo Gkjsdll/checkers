@@ -2,8 +2,7 @@
   width: 640px;
   height: 640px;
   font-size: 0px;
-  border: solid 2px black;
-  padding: 1px;
+  border: solid 2px #585858;
 }
 
 .square {
@@ -32,10 +31,34 @@
   margin: auto;
 }
 
-.square[data-piece="red"]::after {
-  background-image: url("svgs/red_man.svg");
+.square[data-piece="black"]::after {
+  background-image: url("svgs/black_man_solid.svg");
 }
 
-.square[data-piece="black"]::after {
-  background-image: url("svgs/black_man.svg");
+.square[data-piece="blackKing"]::after {
+  background-image: url("svgs/black_king_solid.svg");
+}
+
+.square[data-piece="red"]::after {
+  background-image: url("svgs/red_man_solid.svg");
+}
+
+.square[data-piece="redKing"]::after {
+  background-image: url("svgs/red_king_solid.svg");
+}
+
+.square[data-piece="black"][data-frame="true"]::after {
+  background-image: url("svgs/black_man_frame.svg");
+}
+
+.square[data-piece="blackKing"][data-frame="true"]::after {
+  background-image: url("svgs/black_king_frame.svg");
+}
+
+.square[data-piece="red"][data-frame="true"]::after {
+  background-image: url("svgs/red_man_frame.svg");
+}
+
+.square[data-piece="redKing"][data-frame="true"]::after {
+  background-image: url("svgs/red_king_frame.svg");
 }
