@@ -3,6 +3,7 @@
   height: 640px;
   font-size: 0px;
   border: solid 2px black;
+  padding: 1px;
 }
 
 .square {
@@ -20,13 +21,21 @@
   background: black;
 }
 
-/*.square[data-piece="red"]::after {*/
-.square.test {
-  font-size: 76px;
-  content: ' ';
-  background-image: url("svgs/red_king.svg");
+.square::after {
   background-size: 76px 76px;
   display: block;
   width: 76px;
   height: 76px;
+  font-size: 76px;
+  content: ' ';
+  background-position: center;
+  margin: auto;
+}
+
+.square[data-piece="red"]::after {
+  background-image: url("svgs/red_man.svg");
+}
+
+.square[data-piece="black"]::after {
+  background-image: url("svgs/black_man.svg");
 }

@@ -40,6 +40,12 @@ const GameBoard = (props) => (
     {props.gameState.map((row, rowIndex) => {
       return row.map((piece, colIndex) => {
         if ((rowIndex + colIndex) % 2) {
+          if (piece) {
+            if (piece % 2) {
+              return <div key={rowIndex * 8 + colIndex} data-piece="black" className="square black"></div>;
+            }
+            return <div key={rowIndex * 8 + colIndex} data-piece="red" className="square black"></div>;
+          }
           return <div key={rowIndex * 8 + colIndex} className="square black"></div>;
         }
         return <div key={rowIndex * 8 + colIndex} className="square white"></div>;
